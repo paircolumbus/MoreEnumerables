@@ -1,10 +1,16 @@
+require 'pry'
 
-def capitalize_each_string(input)
-  #implement your solution here
+
+def capitalize_each_string(a_collection_of_animals)
+  a_collection_of_animals.map do |a|
+    a.capitalize
+  end
 end
 
 def fetch_the_dog(input)
-  #implement your solution here
+  input.select do |animal|
+  end
+
 end
 
 def no_dogs_allowed(input)
@@ -29,7 +35,7 @@ animals = ["cat", "moose", "dog", "bird"]
 
 p capitalize_each_string(animals) == ["Cat", "Moose", "Dog", "Bird"]
 
-p fetch_the_dog(animals) == ["dog"] 
+p fetch_the_dog(animals) #== ["dog"]
 
 p no_dogs_allowed(animals) == ["cat", "moose", "bird"]
 
