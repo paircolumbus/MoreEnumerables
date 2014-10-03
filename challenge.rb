@@ -8,25 +8,29 @@ def capitalize_each_string(a_collection_of_animals)
 end
 
 def fetch_the_dog(input)
-  input.select do |animal|
+  input.select do |animals|
+    animals == "dog"
   end
-
 end
 
 def no_dogs_allowed(input)
-  #implement your solution here
+  input.reject do |animals|
+    animals == "dog"
+  end
 end
 
 def count_the_animals(input)
-  #implement your solution here
+  input.count
 end
 
 def fetch_the_first_two(input)
-  #implement your solution here
+  input.first(2)
 end
 
 def fetch_CD_animals(input)
-  #implement your solution here
+  input.find_all do |animals|
+    animals == "cat" ||  animals == "dog"
+  end
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
@@ -35,7 +39,7 @@ animals = ["cat", "moose", "dog", "bird"]
 
 p capitalize_each_string(animals) == ["Cat", "Moose", "Dog", "Bird"]
 
-p fetch_the_dog(animals) #== ["dog"]
+p fetch_the_dog(animals) == ["dog"]
 
 p no_dogs_allowed(animals) == ["cat", "moose", "bird"]
 
