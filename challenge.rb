@@ -4,11 +4,11 @@ def capitalize_each_string(input)
 end
 
 def fetch_the_dog(input)
-  input.grep(/dog/)
+  input.select{ |x| x == "dog"}
 end
 
 def no_dogs_allowed(input)
-  input.select{ |x| x != "dog"}
+  input.reject{ |x| x == "dog"}
 end
 
 def count_the_animals(input)
