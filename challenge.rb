@@ -7,19 +7,19 @@ def fetch_the_dog(input)
 end
 
 def no_dogs_allowed(input)
-	input.reject{ |item| item == "dog" }
+  input.reject{ |item| item == "dog" }
 end
 
 def count_the_animals(input)
-	input.count
+  input.count
 end
 
 def fetch_the_first_two(input)
-	input[0..1]
+  input[0..1]
 end
 
 def fetch_CD_animals(input)
-	input.find_all { |item| ["c","d"].include?(item[0].downcase) }
+  input.find_all { |item| ["c","d"].include?(item[0].downcase) }
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
