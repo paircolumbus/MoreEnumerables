@@ -1,5 +1,3 @@
-require 'pry'
-
 def capitalize_each_string(input)
   input.map{ |item| item.capitalize }
 end
