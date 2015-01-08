@@ -1,26 +1,27 @@
+require 'pry'
 
 def capitalize_each_string(input)
-  #implement your solution here
+  input.map{ |item| item.capitalize }
 end
 
 def fetch_the_dog(input)
-  #implement your solution here
+  input.select{ |item| item == "dog" }
 end
 
 def no_dogs_allowed(input)
-  #implement your solution here
+	input.reject{ |item| item == "dog" }
 end
 
 def count_the_animals(input)
-  #implement your solution here
+	input.count
 end
 
 def fetch_the_first_two(input)
-  #implement your solution here
+	input[0..1]
 end
 
 def fetch_CD_animals(input)
-  #implement your solution here
+	input.find_all { |item| ["c","d"].include?(item[0].downcase) }
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
