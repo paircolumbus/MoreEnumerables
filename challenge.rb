@@ -16,11 +16,11 @@ def count_the_animals(input)
 end
 
 def fetch_the_first_two(input)
-  input.take 2
+  input.first 2
 end
 
 def fetch_CD_animals(input)
-  input.find_all { |item| item == 'cat' || item == 'dog'}
+  input.grep /cat|dog/
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
