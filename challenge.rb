@@ -19,7 +19,7 @@ def fetch_the_first_two(input)
 end
 
 def fetch_CD_animals(input)
-  input.find_all { |item| ["c","d"].include?(item[0].downcase) }
+  input.grep(/^(c|d).*/i)
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
