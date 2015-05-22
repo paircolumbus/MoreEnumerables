@@ -4,11 +4,11 @@ def capitalize_each_string(input)
 end
 
 def fetch_the_dog(input)
-  input.select { |string| string == "dog"} #wtf, works in "driver code"
+  input.select { |string| string == "dog"}
 end
 
 def no_dogs_allowed(input)
-	input.reject { |string| string == "dog"} #wtf, works in driver code
+	input.reject { |string| string == "dog"}
 end
 
 def count_the_animals(input)
