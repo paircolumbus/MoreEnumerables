@@ -1,26 +1,26 @@
 
 def capitalize_each_string(input)
-  #implement your solution here
+  input.map { |string| string.capitalize }
 end
 
 def fetch_the_dog(input)
-  #implement your solution here
+  input.select { |string| string == "dog"} #wtf, works in "driver code"
 end
 
 def no_dogs_allowed(input)
-  #implement your solution here
+	input.reject { |string| string == "dog"} #wtf, works in driver code
 end
 
 def count_the_animals(input)
-  #implement your solution here
+  input.count
 end
 
 def fetch_the_first_two(input)
-  #implement your solution here
+  input.take(2)
 end
 
 def fetch_CD_animals(input)
-  #implement your solution here
+  input.find_all { |string| string.start_with?('c', 'd')}
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
