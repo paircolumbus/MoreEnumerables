@@ -1,6 +1,6 @@
 
 def capitalize_each_string(input)
-  input.map { |string| string.capitalize if string.class == String }
+  input.map { |string| string.capitalize }
 end
 
 def fetch_the_dog(input)
@@ -8,7 +8,7 @@ def fetch_the_dog(input)
 end
 
 def no_dogs_allowed(input)
-  input.select { |entry| entry.downcase != "dog" }
+  input.reject { |entry| entry.downcase == "dog" }
 end
 
 def count_the_animals(input)
