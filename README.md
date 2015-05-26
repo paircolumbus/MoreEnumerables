@@ -5,10 +5,8 @@ You've already used `sort_by` and similar equivalents, now let's learn more abou
 
 ##Instructions
 - Only use Enumerable methods
-- Don't duplicate methods for each function. If you use `select` once, don't use it again for the challenge.
+- **Don't duplicate methods for each function.** If you use `select` once, don't use it again for the challenge.
 
 ##Resources
 - [Ruby Documentation: Enumerable](http://ruby-doc.org/core-2.1.2/Enumerable.html)
 - [The Bastards Book of Ruby: Enumerables](http://ruby.bastardsbook.com/chapters/enumerables/)
-
-
