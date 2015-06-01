@@ -1,33 +1,26 @@
 
 def capitalize_each_string(input)
-	input.map{|x| x.capitalize}
+  input.map{|x| x.capitalize}
 end
 
 def fetch_the_dog(input)
-  	y = []
-  	input.each{|x| y << x if x == "dog"}
-  	y
+  input.select{|x| x == "dog"}
 end
 
 def no_dogs_allowed(input)
-	a = input.dup
-  	a.delete("dog")
-  	a
+  input.reject{|x| x == "dog"}
 end
 
 def count_the_animals(input)
-  	input.count
+  input.count
 end
 
 def fetch_the_first_two(input)
-	a = input.dup
-	a.shift(2)
+  input.take(2)
 end
 
 def fetch_CD_animals(input)
-	y = []
-	input.each{|x| y << x if x == "dog" || x == "cat"}
-	y
+  input.find_all{|i| i == "cat" or i == "dog"}
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
@@ -45,4 +38,3 @@ p count_the_animals(animals) == 4
 p fetch_the_first_two(animals)  == ["cat", "moose"]
 
 p fetch_CD_animals(animals) == ["cat", "dog"]
-p fetch_CD_animals(animals)
