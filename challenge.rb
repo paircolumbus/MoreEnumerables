@@ -22,7 +22,7 @@ def fetch_the_first_two(input)
 end
 
 def fetch_CD_animals(input)
-  input.find_all{|i| i == "cat" or i == "dog"}
+  input.find_all{|i| i.chars.first == "c" or i.chars.first == "d"}
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
