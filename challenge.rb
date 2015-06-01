@@ -1,6 +1,8 @@
 
 def capitalize_each_string(input)
-  input.map{|x| x.capitalize}
+  # input.map{|x| x.capitalize}
+  # using a proc: 
+  input.map(&:capitalize)
 end
 
 def fetch_the_dog(input)
