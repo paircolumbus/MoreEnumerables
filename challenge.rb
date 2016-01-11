@@ -9,7 +9,7 @@ def capitalize_each_string(input)
      result = intermediate.join
    	 final_result.push(result)
   end
-  return final_result
+  final_result
 end
 
 def fetch_the_dog(input)
@@ -18,7 +18,7 @@ def fetch_the_dog(input)
   input.each_with_index do |animal, index|
   	 result.push(animal) if index == 2
   end
-  return result
+  result
 end
 
 def no_dogs_allowed(input)
@@ -27,12 +27,12 @@ def no_dogs_allowed(input)
   input.each_with_index do |animal, index|
   	result.push(animal) if index != 2
   end
-  return result
+  result
 end
 
 def count_the_animals(input)
   #implement your solution here
-  return input.length
+  input.length
  
 end
 
@@ -42,7 +42,7 @@ def fetch_the_first_two(input)
   input.each_with_index do |animal, index|
   	result.push(animal) if index < 2
   end
-  return result
+  result
 end
 
 def fetch_CD_animals(input)
@@ -56,7 +56,7 @@ def fetch_CD_animals(input)
   		final.push(result)
   	end
   end
-  return final
+  final
 end
 
 
